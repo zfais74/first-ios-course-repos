@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="redBlueApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJX-2h-S5Z">
+                                <frame key="frameInset" minX="38" minY="318" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="hideBlueGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ir-pG-c96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XA-D9-Sfn">
+                                <frame key="frameInset" minX="245" minY="318" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide Red">
+                                    <color key="titleColor" red="1" green="0.19762473116615142" blue="0.28909118357996977" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideRedGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtM-OM-KtS"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guitar_PNG3339.png" translatesAutoresizingMaskIntoConstraints="NO" id="bfs-u3-vuo">
+                                <frame key="frameInset" minX="56" minY="71" width="268" height="446"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Transparent_Modern_Red_Guitar_PNG_Clipart.png" translatesAutoresizingMaskIntoConstraints="NO" id="X4R-Ct-Ww5">
+                                <frame key="frameInset" minX="84" minY="49" width="206" height="450"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="blueGuitarImg" destination="bfs-u3-vuo" id="l3P-Qg-dYl"/>
+                        <outlet property="hideBlueButton" destination="qJX-2h-S5Z" id="OQ6-zK-eyA"/>
+                        <outlet property="hideRedButton" destination="3XA-D9-Sfn" id="uf3-oO-WgM"/>
+                        <outlet property="redGuitarImg" destination="X4R-Ct-Ww5" id="XTJ-Qa-nft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Transparent_Modern_Red_Guitar_PNG_Clipart.png" width="2183" height="5282"/>
+        <image name="guitar_PNG3339.png" width="1889" height="5524"/>
+    </resources>
+</document>
